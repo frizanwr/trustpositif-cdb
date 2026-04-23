@@ -81,11 +81,11 @@ Skrip `auto-update.sh` sangat efisien untuk dijalankan secara berkala karena tid
 
 ### 4\. Monitoring
 
-Anda dapat memantau hasil eksekusi otomatis melalui syslog:
+Anda dapat memantau hasil eksekusi otomatis melalui journald:
 
 
 ```
-tail -f /var/log/syslog | grep trustpositif-cdb
+sudo journalctl -t trustpositif-cdb
 ```
 
 Detail Teknis Konversi
